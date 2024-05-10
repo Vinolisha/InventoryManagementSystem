@@ -1,4 +1,3 @@
-import React from "react";
 import axios from "axios";
 import { Component } from "react";
 
@@ -81,9 +80,9 @@ class Service extends Component {
           return axios.get(autoPopRetId);
         };
 
-        AddRequest = (req) => {
-          return axios.post(addRequest, req);
-        };
+        // AddRequest = (req) => {
+        //   return axios.post(addRequest, req);
+        // };
 }
 
 export default new Service();

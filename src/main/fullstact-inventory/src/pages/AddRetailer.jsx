@@ -2,7 +2,7 @@ import React from "react";
 
 import { useNavigate, Link } from "react-router-dom";
 import Service from "../service/Service";
-import { useEffect } from "react";
+
 
 
 export default function AddRetailer() {
@@ -14,7 +14,7 @@ export default function AddRetailer() {
     retAddress: "",
   });
 
-  const { retId, retName, retPhoneNo, retAddress } = Record;
+  const { retName, retPhoneNo, retAddress } = Record;
   const onInputChange = (e) => {
     if (e.target.name === "retId") {
       setRecord({ ...Record, retailer: { prodId: e.target.value } });
@@ -39,7 +39,7 @@ export default function AddRetailer() {
 
           <form onSubmit={(e) => onSubmit(e)}>
             <div className="mb-3">
-              <label htmlFor="Name" role="name" className="form-label float-start ">
+              <label htmlFor="Name"  className="form-label float-start ">
                 <b>Retailer Name</b>
               </label>
               <input
@@ -54,7 +54,7 @@ export default function AddRetailer() {
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="LastName" role="number" className="form-label float-start ">
+              <label htmlFor="LastName"  className="form-label float-start ">
                 <b>Retailer Phone No</b>
               </label>
               <input
@@ -69,7 +69,7 @@ export default function AddRetailer() {
               />
             </div>
             <div className="mb-3">
-              <label htmlFor="LastName" role="address" className="form-label float-start ">
+              <label htmlFor="LastName" className="form-label float-start ">
                 <b>Retailer Address</b>
               </label>
               <input

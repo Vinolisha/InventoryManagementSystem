@@ -2,7 +2,7 @@
 
     import { useNavigate, Link} from "react-router-dom";
     import Service from '../service/Service';
-    import { useEffect } from 'react';
+  
 
     export default function AddProduct() {
       let navigate = useNavigate();
@@ -14,7 +14,7 @@
         availStock:""
     });
 
-    const {prodId, prodName, sellingPrice, purchaseRate, availStock} = Record;
+    const {prodName, sellingPrice, purchaseRate, availStock} = Record;
     const onInputChange =(e) => {
         if(e.target.name === 'prodId'){
         setRecord({...Record,product:{prodId:e.target.value}})
@@ -42,7 +42,7 @@
         
                   <form onSubmit={(e) => onSubmit(e)}>
                     <div className="mb-3">
-                      <label htmlFor="Name" role="label" className="form-label float-start ">
+                      <label htmlFor="Name" className="form-label float-start ">
                         <b>Product Name</b>
                       </label>
                       <input
@@ -57,7 +57,7 @@
                     
                     </div>
                     <div className="mb-3">
-                      <label htmlFor="LastName" role="price" className="form-label float-start ">
+                      <label htmlFor="LastName" className="form-label float-start ">
                         <b>selling Price</b>
                       </label>
                       <input
@@ -73,7 +73,7 @@
                     
                     </div>
                     <div className="mb-3">
-                      <label htmlFor="LastName" role="rate" className="form-label float-start ">
+                      <label htmlFor="LastName" className="form-label float-start ">
                         <b>purchased Rate</b>
                       </label>
                       <input
@@ -86,7 +86,7 @@
                         onChange={(e) => onInputChange(e)}
                       />
                       <div className="mb-3">
-                      <label htmlFor="LastName" role="stock" className="form-label float-start ">
+                      <label htmlFor="LastName" className="form-label float-start ">
                         <b>Available Stock</b>
                       </label>
                       <input

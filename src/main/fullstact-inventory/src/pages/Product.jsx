@@ -1,8 +1,8 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { FaTrashAlt, FaEye, FaEdit } from "react-icons/fa";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { FaTrashAlt, FaEdit } from "react-icons/fa";
+import { Link, useNavigate} from "react-router-dom";
 
 import Service from "../service/Service";
 import axios from "axios";
