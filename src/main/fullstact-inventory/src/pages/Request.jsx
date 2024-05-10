@@ -1,12 +1,12 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import {FaTrashAlt,FaEye,FaEdit} from "react-icons/fa";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import {FaEdit} from "react-icons/fa";
+import { Link} from "react-router-dom";
 import Service from "../service/Service";
 
 export default function Request() {
-  let navigate = useNavigate();
+ 
 
   const [Record, setRecord] = useState([]);
 

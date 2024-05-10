@@ -21,7 +21,7 @@ const autoPopRetId ="http://localhost:1234/AutopopRetIdList";
 const autoPopProdName ="http://localhost:1234/AutopopProdNameList";
 
 
-const addRequest="http://localhost:1234/insertRequest";
+// const addRequest="http://localhost:1234/insertRequest";
 
 
 class Service extends Component {
@@ -84,8 +84,8 @@ class Service extends Component {
         //   return axios.post(addRequest, req);
         // };
 }
-
-export default new Service();
+const service = new Service();
+export default service;
 
 
 

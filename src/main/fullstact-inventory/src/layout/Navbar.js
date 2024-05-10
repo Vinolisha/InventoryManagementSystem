@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="container-fluid" style={{ backgroundColor: "" }}>
 
           <div className="me-1 accordion ">
-            <a className="navbar-brand" href="#">
+            
               <Link className="btn btn-dark me-2" to="/" id="LandingPage">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,6 @@ export default function Navbar() {
                   <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m-.646-4.854.646.647.646-.646a.5.5 0 0 1 .708.707l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 0 1-.708-.707l.647-.647-.647-.646a.5.5 0 0 1 .708-.707Z" />
                 </svg>
               </Link>
-            </a>
           </div>
 
           <div>

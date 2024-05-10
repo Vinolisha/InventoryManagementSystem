@@ -79,7 +79,6 @@ export default function AddRequest() {
                 required
                 type={"text"}
                 id="retId"
-                role="Retail-name"
                 className="form-control"
                 name="retName"
                 onChange={(e) => {
@@ -104,7 +103,6 @@ export default function AddRequest() {
             <div className="mb-3">
               <label 
                 for="colFormLabelLg"
-                role="Product-name"
                 className="form-label float-start "
               >
                 <b>Product Name</b>
@@ -139,7 +137,6 @@ export default function AddRequest() {
               <input
                 type="text"
                 id="reqQuantity"
-                role="quantity"
                 className="form-control" 
                 placeholder="Enter the Quantity"
                 name="reqQuantity"
